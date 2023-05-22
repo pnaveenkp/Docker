@@ -1,5 +1,6 @@
 FROM ubuntu:20.04
 LABEL owner="naveenkumar123243@gmail.com"
+LABEL application="Docker"
 LABEL version="1.0"
 ARG VERSION='1.4.5'
 RUN apt update
