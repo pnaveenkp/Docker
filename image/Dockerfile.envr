@@ -2,7 +2,8 @@ FROM sreeharshav/utils:latest
 LABEL owner="raajasekharr@gmail.com"
 LABEL version="1.0"
 ARG VERSION='1.4.5'
+ENV AWS_ACCESS_KEY_ID="asfgehfqwjeh3o4iujirejf"
+ENV AWS_SECRET_ACCESS_KEY="EDFRWDEJFSFKK;LK"
+EXPOSE 8888
 # CMD ["ping", "-c 3", "www.facebook.com"] # Ping www.facebook.com for three times
-ENTRYPOINT ["ping", "-c 3"]
-CMD ["www.facebook.com"]
-
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
