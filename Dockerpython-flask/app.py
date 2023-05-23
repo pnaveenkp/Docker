@@ -13,7 +13,7 @@ def mega():
 @app.route('/superstar')
 def super():
    return '<h1>Welcome to SuperstarFamily</h2>'
-@app.route('/superstar')
+@app.route('/rebelstar')
 def rebel():
    return '<h1>Welcome to RebelstarFamily</h2>'
 
